@@ -1,9 +1,9 @@
-FROM node:20-alpine AS base
+FROM node:24-alpine AS base
 WORKDIR /usr/src/app
 COPY package.json package-lock.json* ./
 RUN npm install --omit=dev
 
-FROM node:20-alpine
+FROM node:24-alpine
 WORKDIR /usr/src/app
 COPY --from=base /usr/src/app/node_modules ./node_modules
 COPY . .
