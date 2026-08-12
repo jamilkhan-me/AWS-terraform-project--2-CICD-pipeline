@@ -1,0 +1,25 @@
+# Terraform
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+crash.log
+crash.*.log
+*.tfvars.json
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraformrc
+terraform.rc
+*.tfvars
+
+# Never commit anything that could hold credentials
+*.pem
+*.key
+.env
+
+# OS/editor noise
+.DS_Store
+.vscode/
+*.swp
