@@ -1,0 +1,12 @@
+{
+  "name": "ecs-fargate-demo-app",
+  "version": "1.0.0",
+  "description": "Minimal Express app deployed via GitHub Actions -> ECR -> ECS Fargate",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
