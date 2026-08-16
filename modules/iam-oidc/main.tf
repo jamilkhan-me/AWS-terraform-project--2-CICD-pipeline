@@ -1,11 +1,4 @@
-# GitHub's OIDC provider - only needs to be created ONCE per AWS account.
-# If you already have this from another project, remove this resource and
-# pass the existing provider ARN in via a variable instead.
-# resource "aws_iam_openid_connect_provider" "github" {
-#   url             = "https://token.actions.githubusercontent.com"
-#   client_id_list  = ["sts.amazonaws.com"]
-#   thumbprint_list = ["6938fd4d98bab03faadb97b34396831e3780aea"]
-# }
+
 
 resource "aws_iam_openid_connect_provider" "github" {
   url = "https://token.actions.githubusercontent.com"
